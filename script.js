@@ -28,11 +28,9 @@ function addFaqsToDom() {
 		const details = document.createElement("details");
 		const summary = document.createElement("summary");
 		const image = document.createElement("img");
-		const question = document.createElement("p");
-		question.classList.add("question");
 		image.src = "./images/icon-arrow-down.svg";
-		question.textContent = faq.question;
-		summary.append(question);
+		image.alt = "dropdown arrow";
+		summary.textContent = faq.question;
 		summary.append(image);
 		const p = document.createElement("p");
 		p.classList.add("answer");
